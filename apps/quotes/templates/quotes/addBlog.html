@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quotes</title>
+  </head>
+  <body>
+    <a href="{% url 'quotes:index' %}">Home</a>
+    <a href="{% url 'login:logout' %}">Logout</a>
+    Posted by: {{user.username}}
+    Count:{{}}
+
+    {% for blog in blogs%}
+    {% endfor %}
+
+  </body>
+</html>
